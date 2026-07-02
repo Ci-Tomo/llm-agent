@@ -1,0 +1,12 @@
+# Cursor / pip 用依存関係（pyproject.toml と同等）
+openai>=1.34.0
+langchain>=0.2.5
+langchain-openai>=0.1.17
+pydantic>=2.7.4
+python-dotenv>=1.0.1
+tiktoken>=0.7.0
+gradio>=4.36.1
+requests>=2.31.0
+
+# 開発・テスト
+pytest>=8.0.0

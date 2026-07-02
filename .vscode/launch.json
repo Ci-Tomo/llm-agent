@@ -1,0 +1,69 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Chapter2: テキスト生成",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/01_text_generation.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter2: ストリーム対話",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/02_stream_chat.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "args": ["--interactive"]
+    },
+    {
+      "name": "Chapter2: Function Calling",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/03_function_calling.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter2: response_format",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/04_response_format.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter2: 画像入力 (Vision)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/05_vision.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter2: 音声",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/06_audio.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter2: 画像生成 (DALL-E)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/07_image_generation.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
