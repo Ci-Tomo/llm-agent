@@ -5,7 +5,11 @@ langchain-openai>=0.1.17
 pydantic>=2.7.4
 python-dotenv>=1.0.1
 tiktoken>=0.7.0
-gradio>=4.36.1
+gradio==4.36.1
+starlette==0.37.2
+fastapi==0.111.0
+huggingface_hub>=0.23,<0.26
+pandas>=2.2.0
 requests>=2.31.0
 
 # 開発・テスト

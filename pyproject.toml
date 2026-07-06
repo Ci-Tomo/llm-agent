@@ -18,6 +18,7 @@ python-dotenv = "^1.0.1"
 pydantic = "^2.7.4"
 langchain-openai = "^0.1.17"
 requests = "^2.31.0"
+pandas = "^2.2.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.0"
