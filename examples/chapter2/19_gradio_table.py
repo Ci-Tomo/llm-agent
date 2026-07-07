@@ -12,7 +12,7 @@ from langchain_core.pydantic_v1 import BaseModel, Field
 from langchain_core.tools import tool
 from langchain_openai.chat_models import ChatOpenAI
 
-from llm_agent.config import get_default_model, load_env
+from llm_agent.config import create_chat_openai
 
 TABLE_PROMPT = """\
 {user_input}
@@ -36,8 +36,7 @@ def csv2json(csv_text: str) -> str:
 
 
 def create_runnable():
-    load_env()
-    llm = ChatOpenAI(model=get_default_model())
+    llm = create_chat_openai()
     llm_with_tool = llm.bind_tools(tools=[csv2json], tool_choice="csv2json-tool")
     prompt = PromptTemplate.from_template(TABLE_PROMPT)
     get_tool_args = lambda x: x.tool_calls[0]

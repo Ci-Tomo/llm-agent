@@ -9,12 +9,11 @@ import gradio as gr
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_openai.chat_models import ChatOpenAI
 
-from llm_agent.config import get_default_model, load_env
+from llm_agent.config import create_chat_openai
 
 
 def create_llm() -> ChatOpenAI:
-    load_env()
-    return ChatOpenAI(model=get_default_model())
+    return create_chat_openai()
 
 
 def history2messages(history: list[tuple[str, str]]) -> list[HumanMessage | AIMessage]:

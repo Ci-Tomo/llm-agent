@@ -10,7 +10,7 @@ from langchain_openai import ChatOpenAI
 from langchain_openai.output_parsers.tools import PydanticToolsParser
 from pydantic import BaseModel, Field
 
-from llm_agent.config import get_default_model, load_env
+from llm_agent.config import create_chat_openai
 
 PLAN_AND_SOLVE_PROMPT = """\
 ユーザの質問が複雑な場合は、アクションプランを作成し、その後に1つずつ実行する Plan-and-Solve 形式をとります。
@@ -51,8 +51,7 @@ class ActionResult(BaseModel):
 
 
 def create_llm() -> ChatOpenAI:
-    load_env()
-    return ChatOpenAI(model=get_default_model())
+    return create_chat_openai()
 
 
 def build_runnables(llm: ChatOpenAI):

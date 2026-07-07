@@ -6,7 +6,7 @@
 from langchain_core.prompts import PromptTemplate
 from langchain_openai.chat_models import ChatOpenAI
 
-from llm_agent.config import get_default_model, load_env
+from llm_agent.config import create_chat_openai
 
 TRANSLATION_PROMPT = """\
 以下の文章を {language} に翻訳し、翻訳結果のみを返してください。
@@ -16,8 +16,7 @@ TRANSLATION_PROMPT = """\
 
 def create_llm() -> ChatOpenAI:
     """LangChain の ChatOpenAI インスタンスを生成する。"""
-    load_env()
-    return ChatOpenAI(model=get_default_model())
+    return create_chat_openai()
 
 
 def translate(language: str, source_text: str) -> None:

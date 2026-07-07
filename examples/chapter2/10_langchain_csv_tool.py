@@ -10,7 +10,7 @@ from langchain_core.pydantic_v1 import BaseModel, Field
 from langchain_core.tools import tool
 from langchain_openai.chat_models import ChatOpenAI
 
-from llm_agent.config import get_default_model, load_env
+from llm_agent.config import create_chat_openai
 from llm_agent.paths import OUTPUT_DIR
 
 
@@ -46,8 +46,7 @@ TABLE_PROMPT = """\
 
 def create_llm_with_tool() -> ChatOpenAI:
     """CSV 保存ツールを紐づけた LLM を生成する。"""
-    load_env()
-    llm = ChatOpenAI(model=get_default_model())
+    llm = create_chat_openai()
     return llm.bind_tools(tools=[csv_save], tool_choice="csv-save-tool")
 
 

@@ -57,10 +57,101 @@
       "envFile": "${workspaceFolder}/.env"
     },
     {
-      "name": "Chapter2: 画像生成 (DALL-E)",
+      "name": "Chapter2: Gradio Interface",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/examples/chapter2/07_image_generation.py",
+      "program": "${workspaceFolder}/examples/chapter2/12_gradio_interface.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter2: Gradio Blocks",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/13_gradio_blocks.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter2: Gradio Components",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/14_gradio_components.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter2: Gradio UI Layout",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/15_gradio_ui_layout.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter2: Gradio State",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/16_gradio_state.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter2: Gradio Chat",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/17_gradio_chat.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter2: Gradio Stream Chat",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/17_gradio_chat.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "args": ["--stream"]
+    },
+    {
+      "name": "Chapter2: Gradio 翻訳",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/18_gradio_translation.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter2: Gradio テーブル",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/19_gradio_table.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter2: Gradio Plan-and-Solve",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter2/20_gradio_plan_and_solve.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Chapter3: 検索ツール",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/chapter3/04_search_tool.py",
       "console": "integratedTerminal",
       "cwd": "${workspaceFolder}",
       "envFile": "${workspaceFolder}/.env"
