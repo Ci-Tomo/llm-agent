@@ -84,3 +84,29 @@ def get_serpapi_api_key() -> str:
     )
     assert key is not None
     return key
+
+
+def get_mem0_api_key() -> str:
+    """Mem0 API キーを取得する。"""
+    key = get_secret(
+        "MEM0_API_KEY",
+        setup_hint=(
+            "  cp .env.example .env\n"
+            "  .env に MEM0_API_KEY を設定してください（https://mem0.ai/）。"
+        ),
+    )
+    assert key is not None
+    return key
+
+
+def get_tavily_api_key() -> str:
+    """Tavily API キーを取得する。"""
+    key = get_secret(
+        "TAVILY_API_KEY",
+        setup_hint=(
+            "  cp .env.example .env\n"
+            "  .env に TAVILY_API_KEY を設定してください（https://tavily.com/）。"
+        ),
+    )
+    assert key is not None
+    return key
